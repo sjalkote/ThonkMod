@@ -16,7 +16,6 @@ public class thonkmod
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "thonkmod";
-    public static final String VERSION = "1.0.0";
     // public static final ItemGroup THONKMOD_TAB = new thonkmodTab("thonkmodtab");
 
     public thonkmod() {
