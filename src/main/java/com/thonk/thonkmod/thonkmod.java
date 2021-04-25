@@ -1,6 +1,8 @@
 package com.thonk.thonkmod;
 
+import com.thonk.thonkmod.core.init.BlockInit;
 import com.thonk.thonkmod.core.init.ItemInit;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,12 +30,13 @@ public class thonkmod
         bus.addListener(this::setup);
 
         ItemInit.ITEMS.register(bus);
-        // BlockInit.BLOCKS.register(bus);
+        BlockInit.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+
     }
 
 

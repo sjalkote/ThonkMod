@@ -1,4 +1,5 @@
 {
   "itemGroup.thonkmodtab": "ThonkMod",
-  "item.thonkmod.thonk_item": "Thonk"
+  "item.thonkmod.thonk_item": "Thonk",
+  "block.thonkmod.thonk_ore_block": "Mena de Thonk"
 }
