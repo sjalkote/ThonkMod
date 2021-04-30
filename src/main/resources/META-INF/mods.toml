@@ -20,19 +20,19 @@ logoFile="logo.png" #optional
 modId="thonkmod" #mandatory
 
 # The version number of the mod, use ${} variables or just hardcode it. ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
-version="1.2.2" #mandatory
+version="1.2.3" #mandatory
 
  # A display name for the mod
 displayName="Thonk Mod" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
-#updateJSONURL="https://github.com/TechnoShip123/thonkmod/blob/master/update.json" #optional
+updateJSONURL="https://github.com/TechnoShip123/thonkmod/blob/master/update.json" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/TechnoShip123/thonkmod/" #optional
 
 # Credits text field displayed in the mod UI
-credits="Thanks to the 2GB of RAM I have left that didn't give up on me." #optional
+credits="Thanks to @Fripe070 for textures!" #optional
 
 # Authors text field displayed in the mod UI
 authors="TechnoShip123 (Thonk)" #optional
