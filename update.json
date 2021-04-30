@@ -1,10 +1,11 @@
 {
   "homepage": "https://github.com/TechnoShip123/ThonkMod/releases/latest/",
   "promos": {
-    "1.16.5-latest": "1.2.2",
-    "1.16.5-recommended": "1.2.2"
+    "1.16.5-latest": "1.2.3",
+    "1.16.5-recommended": "1.2.3"
   },
   "1.16.5": {
-    "1.12.2": "Added drops for Thonk Ore, includes for a normal pickaxe, a fortune-enchanted pickaxe, and a silk-touch-enchanted pickaxe. Mining without a pickaxe will not drop anything."
+    "1.2.3": "New update.json file which allows the user to know when the mod has an update.",
+    "1.2.2": "Added drops for Thonk Ore, includes for a normal pickaxe, a fortune-enchanted pickaxe, and a silk-touch-enchanted pickaxe. Mining without a pickaxe will not drop anything."
   }
 }
