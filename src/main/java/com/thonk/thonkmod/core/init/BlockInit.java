@@ -20,5 +20,6 @@ public class BlockInit {
             () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY)
                     .strength(12f, 7f) // Hardness and Resistance
                     // Diamond pic or higher, has block sounds affiliated with minecraft:stone
-                    .harvestTool(ToolType.PICKAXE).harvestLevel(3).sound(SoundType.STONE)));
+                    .harvestTool(ToolType.PICKAXE).harvestLevel(3).sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops())); // It needs to be mined with the tooltype specified or it won't drop
 }
