@@ -31,17 +31,19 @@ public class thonk_wand_spitem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
+        // If the user is holding down the LEFT CONTROL key:
         if (InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_CONTROL)) {
-            tooltip.add(new StringTextComponent("\u00A77With a \u00A73right click\u00A77, you can summon\n" +
-                    " \u00A7elightning \u00A77wherever you look. However, this power\n comes with a \u00A74cooldown" +
-                    "\u00A77 of\u00A7c 5 seconds."));
+            tooltip.add(new StringTextComponent("\u00A77With a \u00A73right click\u00A77, you can summon" +
+                    " \u00A7elightning \u00A77\nwherever you look. There is a \u00A74cooldown" +
+                    "\u00A77 of\n\u00A7c5 seconds per use."));
+
+        // If the user is holding down the LEFT SHIFT key:
         } else if (InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
-            tooltip.add(new StringTextComponent("\u00A77This \u00A76legendary \u00A77item is rumored to posses" +
-                    "a power that allows the user to control \u00A7elightning \u00A77wherever they wish. However, " +
-                    "the owner must see their target for the wand to do its work."));
+            tooltip.add(new StringTextComponent("\u00A77This \u00A76legendary \u00A77item is rumored to\n" +
+                    "posses a power that allows the user\nto summon \u00A7elightning \u00A77wherever they wish."));
         }
+        // The default text to show:
         else {
-            // "Hold " + "\u00A7e" + "Shift" + "\u00A77" + " for More Information"
             tooltip.add(new TranslationTextComponent("tooltip.thonk_wand_spitem.hold_shift"));
             tooltip.add(new TranslationTextComponent("tooltip.thonk_wand_spitem.hold_control"));
         }
