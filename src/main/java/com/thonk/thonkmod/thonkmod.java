@@ -58,7 +58,7 @@ public class thonkmod
         @Nonnull
         public ItemStack makeIcon() {
             // Set the creative tab icon to the default instance of this item:
-            return ItemInit.THONK_ITEM.get().getDefaultInstance();
+            return ItemInit.THONK.get().getDefaultInstance();
         }
 
     }

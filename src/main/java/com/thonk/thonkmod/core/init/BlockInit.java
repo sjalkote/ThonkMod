@@ -16,7 +16,7 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, thonkmod.MOD_ID);
 
     //  Thonk Ore
-    public static final RegistryObject<Block> THONK_ORE_BLOCK = BLOCKS.register("thonk_ore_block",
+    public static final RegistryObject<Block> THONK_ORE = BLOCKS.register("thonk_ore",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY)
                     .strength(12f, 7f) // Hardness and Resistance
                     // Diamond pic or higher, has block sounds affiliated with minecraft:stone
