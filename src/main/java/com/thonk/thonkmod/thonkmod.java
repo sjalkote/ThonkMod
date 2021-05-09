@@ -17,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 import javax.annotation.Nonnull;
 
 // The value here should match an entry in the META-INF/mods.toml file
+@SuppressWarnings("unused")
 @Mod("thonkmod")
 public class thonkmod
 {

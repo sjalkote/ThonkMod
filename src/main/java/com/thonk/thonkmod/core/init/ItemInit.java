@@ -4,11 +4,13 @@ import com.thonk.thonkmod.common.items.thonk_wand_spitem;
 import com.thonk.thonkmod.thonkmod;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 
+@SuppressWarnings("unused")
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, thonkmod.MOD_ID);
 
@@ -18,7 +20,7 @@ public class ItemInit {
 
     // SPECIAL ITEMS
     public static final RegistryObject<thonk_wand_spitem> THONK_WAND_SPITEM = ITEMS.register("thonk_wand_spitem",
-            () -> new thonk_wand_spitem(new Item.Properties().tab(thonkmod.THONKMOD_TAB)));
+            () -> new thonk_wand_spitem(new Item.Properties().tab(thonkmod.THONKMOD_TAB).fireResistant().rarity(Rarity.EPIC)));
 
     // BLOCK ITEMS
     public static final RegistryObject<BlockItem> THONK_ORE_BLOCK = ITEMS.register("thonk_ore_block",

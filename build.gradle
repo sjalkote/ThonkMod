@@ -14,7 +14,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.3.1-forge'
+version = '1.3.2-forge'
 group = 'com.thonk.thonkmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'thonkmod'
 compileJava.options.encoding = 'UTF-8' // For color codes, if this is problematic you can remove it.

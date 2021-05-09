@@ -20,7 +20,7 @@ logoFile="logo.png" #optional
 modId="thonkmod" #mandatory
 
 # The version number of the mod, use ${} variables or just hardcode it. ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
-version="1.3.1" #mandatory
+version="1.3.2" #mandatory
 
  # A display name for the mod
 displayName="Thonk Mod" #mandatory
