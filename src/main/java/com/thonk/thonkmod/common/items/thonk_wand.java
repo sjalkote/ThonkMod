@@ -22,9 +22,9 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 
-public class thonk_wand_spitem extends Item {
+public class thonk_wand extends Item {
 
-    public thonk_wand_spitem(Properties properties) {
+    public thonk_wand(Properties properties) {
         super(properties);
     }
 
@@ -44,8 +44,8 @@ public class thonk_wand_spitem extends Item {
         }
         // The default text to show:
         else {
-            tooltip.add(new TranslationTextComponent("tooltip.thonk_wand_spitem.hold_shift"));
-            tooltip.add(new TranslationTextComponent("tooltip.thonk_wand_spitem.hold_control"));
+            tooltip.add(new TranslationTextComponent("tooltip.thonk_wand.hold_shift"));
+            tooltip.add(new TranslationTextComponent("tooltip.thonk_wand.hold_control"));
         }
     }
 

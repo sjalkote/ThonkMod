@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "thonkmod:thonk_ore_block"
+              "name": "thonkmod:thonk_ore"
             },
 
             {
@@ -50,7 +50,7 @@
                 }
 
               ],
-              "name": "thonkmod:thonk_item"
+              "name": "thonkmod:thonk"
             }
           ]
         }
