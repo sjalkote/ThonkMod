@@ -11,8 +11,5 @@ listed under assets. It should be `thonkmod-X.X.X-forge.jar`. Once you download 
 If you have played it before it should have generated a `mods` folder in your `.minecraft` directory. Drag the ThonkMod `.jar` file into the mods folder, and
 start Minecraft in the launcher. Make sure to select whatever profile is associated with Forge.
 
-### Usage
-By not providing a license I have opted for the No License, and as quoted from [Choose A License](https://choosealicense.com/no-permission/):
-> Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation.
-
-By this guideline you may not use my code or modify it, as it is not using an open source license.
+### License
+See the license in the main repository branch for details.
