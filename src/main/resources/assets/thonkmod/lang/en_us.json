@@ -1,8 +1,0 @@
-{
-  "itemGroup.thonkmodtab": "ThonkMod",
-  "item.thonkmod.thonk": "Thonk",
-  "block.thonkmod.thonk_ore": "Thonk Ore",
-  "item.thonkmod.thonk_wand": "Thonk Wand",
-  "tooltip.thonk_wand.hold_shift": "\u00A77Hold\u00A7e [Shift]\u00A77 for lore.",
-  "tooltip.thonk_wand.hold_control": "\u00A77Hold\u00A7e [Ctrl]\u00A77 for usage."
-}

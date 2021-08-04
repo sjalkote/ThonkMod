@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "thonkmod:blocks/thonk_ore"
-  }
-}
