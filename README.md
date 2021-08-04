@@ -13,10 +13,11 @@ generated a `mods` folder in your `.minecraft` directory. Drag the ThonkMod `.ja
 start playing with the Forge Minecraft profile! Make sure that you are playing on the correct Minecraft version,
 this mod is currently for [Forge 1.17.1](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.17.1.html)
 or later.
+
 #### Localization Notice
 The mod may include language files for languages other than American English (en-us). However, keep in mind that 
 _translations may not be 100% accurate_. If you spot an incorrect translation and want to help make it accurate, 
-please open an issue rather than a pull request.
+please open an issue with your proposed corrections, rather than a pull request.
 
 ### License
 I have opted for the GNU GENERAL PUBLIC LICENSE v3 which essentially states that
