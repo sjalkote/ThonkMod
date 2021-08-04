@@ -19,12 +19,20 @@ _translations may not be 100% accurate_. If you spot an incorrect translation an
 please open an issue rather than a pull request.
 
 ### License
-I have opted for the GNU LESSER GENERAL PUBLIC LICENSE v2.1 which states:
-> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-
+I have opted for the GNU GENERAL PUBLIC LICENSE v3 which essentially states that
+> **1.** Anyone can copy, modify and distribute this software.
+> 
+> **2.** You have to include the license and copyright notice with each and every distribution.
 For the full license, see the [LICENSE file](https://github.com/TechnoShip123/ThonkMod/blob/master/LICENSE/) available
-in the repository. 
-You can view the [license webpage on gnu.org](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+in the repository.
+> 
+> **3.** You can use this software privately.
+> 
+> **4.** You can use this software for commercial purposes.
+
+There is of course, much more that the license entails, but for that you can view the 
+[license webpage on gnu.org](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html), which can tell you everything
+that you can and can't do.
 
 ### Contribution
 Since this mod is mostly just for self-learning rather than actual gameplay purposes, I am not really open to pull 
