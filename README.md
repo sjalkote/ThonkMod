@@ -1,4 +1,4 @@
-# Thonk Mod
+# Thonk Mod for 1.17.1
 ![Mod Logo](https://github.com/TechnoShip123/ThonkMod/blob/master/logo.png)
 
 ### About
