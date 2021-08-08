@@ -1,5 +1,5 @@
 # Thonk Mod
-![Mod Logo](https://github.com/TechnoShip123/ThonkMod/blob/master/src/main/resources/logo.png)
+![Mod Logo](https://github.com/TechnoShip123/ThonkMod/blob/master/src/main/resources/logo.png?raw=true)
 
 ### About
 ThonkMod is a simple mod by me to learn my way around modding [Minecraft](https://minecraft.net/) 
@@ -17,7 +17,7 @@ or later.
 #### Localization Notice
 The mod may include language files for languages other than American English (en-us). However, keep in mind that 
 _translations may not be 100% accurate_. If you spot an incorrect translation and want to help make it accurate, 
-please open an issue with your proposed corrections, rather than a pull request.
+it would be preferred for you to open an issue with your proposed corrections, rather than a PR.
 
 ### License
 I have opted for the GNU GENERAL PUBLIC LICENSE v3 which essentially states that
