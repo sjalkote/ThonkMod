@@ -1,0 +1,90 @@
+package com.technoship123.thonkmod;
+
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fmllegacy.RegistryObject;
+
+import java.util.function.Supplier;
+
+public class _OLDREGISTRAR {
+
+    /** Class for registering <code>Blocks</code> as well as <code>BlockItems</code> for the <code>ModBlocks</code> class.
+     * @see ModBlocks ModBlocks */
+    @SuppressWarnings("unused")
+    class ModBlocksRegistrar {
+
+        /** Registers blocks using the ThonkMod Registrar but does <b>not</b> register block-items for them.
+         * @param name The name of the block.
+         * @param block The RegistryObject Block itself.
+         * @return The registered block.
+         * @see ModBlocks ModBlocks
+         * @see com.technoship123.thonkmod.ThonkMod.Registrar ThonkMod.Registrar
+         */
+        public static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block) {
+            return ThonkMod.BLOCKS.register(name, block);
+        }
+        /** This method automatically registers BlockItems for blocks created in the ModBlocks class, as well as the
+         * Blocks themselves, and will add them to the ThonkMod Creative Tab by default.
+         * @param name The name of the BlockItem to register.
+         * @param rarity The rarity of the BlockItem.
+         * @param fireResistant True/False value for if the BlockItem is fire-resistant.
+         * @param creativeTab The CreativeModeTab that you would like the BlockItem to be located in.
+         * @param block The block to register a BlockItem for.
+         * @return Returns the RegistryObject.
+         * @see ModBlocks ModBlocks
+         * @see com.technoship123.thonkmod.ThonkMod.Registrar ThonkMod.Registrar
+         * @see #registerWithItem(String, Supplier) registerWithItem()
+         */
+        public static <T extends Block> RegistryObject<T> registerWithItem(String name, Rarity rarity, Boolean fireResistant, CreativeModeTab creativeTab, Supplier<T> block) {
+            RegistryObject<T> regObj = registerNoItem(name, block);  // TODO: Set Creative Tab to ThonkMod tab
+            if (fireResistant) { ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties().tab(creativeTab).rarity(rarity).fireResistant()));}
+            else { ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties().tab(creativeTab).rarity(rarity))); }
+            return regObj;
+        }
+
+        /** Overload of the {@link #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)} with a: <br>
+         * Default {@code creativeTab} of ThonkModTab <br>
+         * @param fireResistant True/False fire-resistance of the BlockItem.
+         * @param rarity The rarity of the BlockItem.
+         * @see #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)
+         */
+        public static <T extends Block> RegistryObject<T> registerWithItem(String name, Rarity rarity, Boolean fireResistant, Supplier<T> block) {
+            RegistryObject<T> regObj = registerNoItem(name, block);
+            if (fireResistant) { ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS).rarity(rarity).fireResistant()));}
+            else { ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS).rarity(rarity))); }
+            return regObj;
+        }
+
+        /** Overload of the {@link #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)} with a: <br>
+         * Default {@code creativeTab} of ThonkModTab <br>
+         * Default {@code fireResistant} of False <br>
+         * @param rarity The rarity of the BlockItem.
+         * @see #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)
+         */
+        public static <T extends Block> RegistryObject<T> registerWithItem(String name, Rarity rarity, Supplier<T> block) {
+            RegistryObject<T> regObj = registerNoItem(name, block);
+            ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties()
+                    .tab(CreativeModeTab.TAB_BUILDING_BLOCKS).rarity(rarity)));  // TODO: Set Creative Tab to ThonkMod tab
+            return regObj;
+        }
+
+        /** Overload of the {@link #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)} with a: <br>
+         * Default {@code creativeTab} of ThonkModTab <br>
+         * Default {@code fireResistance} of False <br>
+         * Default {@code rarity} of None <br>
+         * @see #registerWithItem(String, Rarity, Boolean, CreativeModeTab, Supplier)
+         */
+        public static <T extends Block> RegistryObject<T> registerWithItem(String name, Supplier<T> block) {
+            RegistryObject<T> regObj = registerNoItem(name, block);
+            ThonkMod.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties()
+                    .tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));  // TODO: Set Creative Tab to ThonkMod tab
+            return regObj;
+        }
+
+        static void register() {}
+
+    }
+}
