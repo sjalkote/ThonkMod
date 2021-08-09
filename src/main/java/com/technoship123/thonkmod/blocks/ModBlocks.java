@@ -1,5 +1,6 @@
-package com.technoship123.thonkmod;
+package com.technoship123.thonkmod.blocks;
 
+import com.technoship123.thonkmod.ThonkMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -29,12 +30,12 @@ public class ModBlocks {
         return ThonkMod.Registrar.BLOCKS.register(name, block);
     }
 
-    private static <T extends Block> RegistryObject<T> registerWithItem(String name, Supplier<T> block) {
+    public static <T extends Block> RegistryObject<T> registerWithItem(String name, Supplier<T> block) {
         RegistryObject<T> regObj = registerNoItem(name, block);
         ThonkMod.Registrar.ITEMS.register(name, () -> new BlockItem(regObj.get(), new Item.Properties()
                 .tab(ThonkMod.CREATIVE_TAB)));
         return regObj;
     }
 
-    static void registerWithItem() {}
+    public static void registerWithItem() {}
 }

@@ -1,6 +1,8 @@
 // ThonkMod is under the GNU General Public License v3. Please make sure to follow it if using my code, thanks!
 package com.technoship123.thonkmod;
 
+import com.technoship123.thonkmod.blocks.ModBlocks;
+import com.technoship123.thonkmod.items.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
