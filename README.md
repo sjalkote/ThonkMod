@@ -1,3 +1,4 @@
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TechnoShip123/ThonkMod/%F0%9F%9B%A0%20Gradle%20Build%20%F0%9F%9B%A0/master?label=Gradle%20Build&logo=gradle&logoColor=lightblue&style=for-the-badge)
 # Thonk Mod
 ![Mod Logo](https://github.com/TechnoShip123/ThonkMod/blob/master/src/main/resources/logo.png?raw=true)
 
