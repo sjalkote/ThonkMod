@@ -7,7 +7,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -51,21 +50,22 @@ public class ThonkMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        // TODO see net.minecraftforge.fml.VersionChecker
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("[{}] [{}]: Hello from ThonkMod.", MID, this);  // , VersionChecker.getResult(), current, target);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
-        // some example code to dispatch IMC to another mod
-        InterModComms.sendTo("thonkmod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+        // TODO: experiment with some example code to dispatch IMC to another mod
+        InterModComms.sendTo("thonkmod", "helloworld", () -> {
+            LOGGER.info(String.format("[%s]: This is IMC from ThonkMod!", MID)); return "Hello mods!";});
     }
 
     private void processIMC(final InterModProcessEvent event)
     {
         // some example code to receive and process InterModComms from other mods
-        LOGGER.info("Got IMC {}", event.getIMCStream().
+        LOGGER.info("[{}]: Got IMC {}", MID, event.getIMCStream().
                 map(m->m.messageSupplier().get()).
                 collect(Collectors.toList()));
     }
