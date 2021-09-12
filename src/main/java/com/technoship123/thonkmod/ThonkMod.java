@@ -1,4 +1,4 @@
-// ThonkMod is under the GNU General Public License v3. Please make sure to follow it if using my code, thanks!
+// Copyright © 2020, 2021 TechnoShip123, ThonkMod is under the GNU General Public License v3.
 package com.technoship123.thonkmod;
 
 import com.technoship123.thonkmod.blocks.ModBlocks;
@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
 @Mod("thonkmod")
 public class ThonkMod
 {
-    /** The <b>Mod ID</b> for ThonkMod. Must match the Mod ID listed in the <code>mods.toml</code> file & the <code>@Mod</code> annotation */
+    /** The <b>Mod ID</b> for ThonkMod. Must match the Mod ID listed in the <code>mods.toml</code> file &amp; the <code>@Mod</code> annotation */
     public static final String MID = "thonkmod";
     /** The <b>CreativeModeTab</b> for ThonkMod, which houses all things related to the mod. */
     public static final CreativeModeTab CREATIVE_TAB = new CreativeTab("thonkmod");
@@ -76,13 +76,13 @@ public class ThonkMod
         LOGGER.info("HELLO from server starting");
     }
 
-    /** Houses methods & objects related to the registry of Blocks, Items, and BlockItems for ThonkMod. */
+    /** Houses methods &amp; objects related to the registry of Blocks, Items, and BlockItems for ThonkMod. */
     public static class Registrar {
         /** DeferredRegister for registering <b>Blocks</b> */
         public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MID);
-        /** DeferredRegister for registering <b>Items</b> & <b>BlockItems</b> */
+        /** DeferredRegister for registering <b>Items</b> &amp; <b>BlockItems</b> */
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MID);
-        /** Adds items & blocks to the registry task, uses the <code><b>DeferredRegister</b></code>. */
+        /** Adds items &amp; blocks to the registry task, uses the <code><b>DeferredRegister</b></code>. */
         public static void register() {
             IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
             BLOCKS.register(eventBus);  ITEMS.register(eventBus);  // Register Blocks & Items
@@ -90,7 +90,7 @@ public class ThonkMod
         }
     }
 
-    /** Class that creates the custom <code><b>CreativeModeTab</b></code> for ThonkMod-related Items & BlockItems.
+    /** Class that creates the custom <code><b>CreativeModeTab</b></code> for ThonkMod-related Items &amp; BlockItems.
      * @see net.minecraft.world.item.CreativeModeTab */
     public static class CreativeTab extends CreativeModeTab {
         // The name used in lang files will be something like "itemGroup.creativeTabName":
